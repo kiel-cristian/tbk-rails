@@ -13,11 +13,11 @@ module TbkRails
         say("Installing default version of Tbk-rails")
       end
 
-      say("Installing controllers ...", :orange)
+      say("Installing controllers ...", :yellow)
       install_controllers
       say("Ready!", :green)
 
-      say("Installing routes ...", :orange)
+      say("Installing routes ...", :yellow)
       install_routes
       say("Ready!", :green)
 
@@ -26,12 +26,6 @@ module TbkRails
       else
         default
       end
-
-      say("Adding gem dependency to Gemfile", :orange)
-      gem("tbk", "~> #{Tbk::Rails::VERSION::TBK}" )
-
-      say("Installing TBK ... ", :orange)
-      run("bundle install tbk")
 
       say("Complete!", :green)
 
@@ -55,7 +49,7 @@ module TbkRails
     end
 
     def install_controllers
-      controllers = Dir.glob('controllers/webpay/*')
+      controllers = Dir.glob('controllers/*')
 
       controllers.each do |controller|
         file = file_name(controller)
