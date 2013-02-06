@@ -5,7 +5,7 @@ require 'tbk-rails/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "tbk-rails"
-  gem.version       = Tbk::Rails::VERSION
+  gem.version       = Tbk::Rails::VERSION::GEM
   gem.authors       = ["Cristian Carreño Medina", "Gonzalo Bulnes Guilpain" ]
   gem.email         = ["kiel@acid.cl", "gonzalo@acid.cl"]
   gem.description   = %q{Provides TBK integration with Rails}
@@ -17,5 +17,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_dependency "tbk"
+  gem.add_dependency "tbk", "~> #{Tbk::Rails::VERSION::TBK}"}
 end

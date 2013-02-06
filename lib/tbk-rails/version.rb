@@ -1,5 +1,8 @@
 module Tbk
   module Rails
-    VERSION = "0.0.1"
+    module VERSION
+      TBK = "0.9.2"
+      GEM = "0.0.1"
+    end
   end
 end
