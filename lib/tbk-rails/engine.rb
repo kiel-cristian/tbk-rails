@@ -1,7 +1,5 @@
 require 'rails'
-module Tbk
-  module Rails
-    class Engine < Rails::Engine
-    end
+module TbkRails
+  class Engine < Rails::Engine
   end
 end
