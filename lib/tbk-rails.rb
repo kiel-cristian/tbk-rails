@@ -1,7 +1,2 @@
 require "tbk-rails/version"
-
-module Tbk
-  module Rails
-    # Your code goes here...
-  end
-end
+require 'tbk-rails/engine' if defined?(Rails)
