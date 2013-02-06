@@ -50,6 +50,7 @@ module TbkRails
       directory "controllers", "app/controllers"
     end
 
+    #Pending: Check compatibily of routes
     def install_routes
       route("post '/webpay/pay'")
       route("post '/webpay/confirmation'")
