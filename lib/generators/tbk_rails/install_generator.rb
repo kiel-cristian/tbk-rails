@@ -5,9 +5,9 @@ module TbkRails
     source_root File.expand_path("../../templates", __FILE__)
 
     def install_tbk_webpay
-      mode = yes?("Would you like to create minimal views? [Y|N]")
+      mode = yes?("Would you like to create complete views(also with Bootstrap layout)? [Y/n]")
 
-      if mode
+      if !mode
         say("Installing minimal version of TbkRails", :yellow)
       else
         say("Installing default version of TbkRails", :yellow)
