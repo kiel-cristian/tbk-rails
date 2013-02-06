@@ -8,14 +8,33 @@ module Tbk
       def install_tbk_webpay
         mode = yes?("Would you like to create minimal views?")
 
+        if mode
+          say("Installing minimal version of Tbk-rails")
+        else
+          say("Installing default version of Tbk-rails")
+        end
+
+        say("Installing controllers ...", :orange)
         install_controllers
+        say("Ready!", :green)
+
+        say("Installing routes ...", :orange)
         install_routes
+        say("Ready!", :green)
 
         if mode
           minimal
         else
           default
         end
+
+        say("Adding gem dependency to Gemfile", :orange)
+        gem("tbk", "~> #{Tbk::Rails::VERSION::TBK}" )
+
+        say("Installing TBK ... ", :orange)
+        run("bundle install tbk")
+
+        say("Complete!", :green)
 
       end
 
