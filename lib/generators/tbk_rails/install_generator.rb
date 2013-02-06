@@ -15,12 +15,13 @@ module TbkRails
 
       say("Installing controllers ...", :yellow)
       install_controllers
-      say("Ready!", :green)
+      say("Ready!")
 
       say("Installing routes ...", :yellow)
       install_routes
-      say("Ready!", :green)
+      say("Ready!")
 
+      say("Installing views ...", :yellow)
       if mode
         minimal
       else
