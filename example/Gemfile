@@ -2,4 +2,4 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'tbk-rails', path: '../'
-gem "tbk", :git => "https://github.com/gonzalo-bulnes/tbk.git"
+gem "tbk", :git => "https://github.com/gonzalo-bulnes/tbk.git", :branch => "server-configuration-variables"
