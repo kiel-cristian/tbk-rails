@@ -29,7 +29,7 @@ module TbkRails
       end
 
       say("Installing TBK ...", :yellow)
-      gem('tbk', git: "#{TbkRails::VERSION::GIT}")
+      gem('tbk', git: "#{TbkRails::VERSION::GIT}", branch: "#{TbkRails::VERSION::GIT_BRANCH}" )
 
       Bundler.with_clean_env do
         run "bundle install"
