@@ -28,6 +28,13 @@ module TbkRails
         default
       end
 
+      say("Installing TBK ...", :yellow)
+      gem('tbk', git: "#{TbkRails::VERSION::GIT}")
+
+      Bundler.with_clean_env do
+        run "bundle install"
+      end
+
       say("Complete!", :green)
 
     end
