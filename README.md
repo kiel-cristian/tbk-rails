@@ -35,7 +35,7 @@ this means that, the gem doesn't install bootstrap-rails, only generate compatib
 Would you like to create complete views (also integrated with Bootstrap layout)? [Y/n]
 ```
 
-Type '__Y__[es]' or '__n__[o]' in order to continue.
+Type __Y__[es] or __n__[o] in order to continue.
 
 If everything went ok, you should see in your shell somenthing like this:
 
