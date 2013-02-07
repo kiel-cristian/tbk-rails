@@ -18,7 +18,7 @@ gem 'tbk-rails', git: 'https://github.com/kiel-cristian/tbk-rails.git'
 This installs both the `tbk` and `tbk-rails` gems.
 
 
-Installing WebPay controller and related views 
+Installing WebPay controller and related views
 ----------------------------------------------
 
 After successful bundle installation, you need to run the following command inside your Rails Application to generate WebPay controller
@@ -32,7 +32,7 @@ this means that, the gem doesn't install bootstrap-rails, only generate compatib
 
 
 ```
-Would you like to create complete views (also integrated with Bootstrap layout)? [Y/n]
+Would you like to create complete views(also with Bootstrap layout)? [Y/n]
 ```
 
 Type __Y__[es] or __n__[o] in order to continue.

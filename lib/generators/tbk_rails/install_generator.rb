@@ -22,7 +22,7 @@ module TbkRails
       say("Ready!")
 
       say("Installing views ...", :yellow)
-      if mode
+      if !mode
         minimal
       else
         default
