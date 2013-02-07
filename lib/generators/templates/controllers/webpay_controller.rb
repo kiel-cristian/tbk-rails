@@ -1,9 +1,5 @@
 class WebpayController < ApplicationController
 
-  def show
-
-  end
-
   def pay
     # Setup the payment
     @payment = TBK::Webpay::Payment.new({
