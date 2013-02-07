@@ -48,6 +48,7 @@ module TbkRails
 
     def install_controllers
       directory "controllers", "app/controllers"
+      copy_file "config/initializers/tbk.rb"
     end
 
     #Pending: Check compatibily of routes
