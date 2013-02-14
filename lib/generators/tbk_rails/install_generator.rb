@@ -62,8 +62,8 @@ module TbkRails
     def install_routes
       route("post '/webpay/pay'")
       route("post '/webpay/confirmation'")
-      route("get '/webpay/success'")
-      route("get '/webpay/failure'")
+      route("post '/webpay/success'")
+      route("post '/webpay/failure'")
     end
 
   end
