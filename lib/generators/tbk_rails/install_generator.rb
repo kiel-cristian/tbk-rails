@@ -47,7 +47,7 @@ module TbkRails
     end
 
     def install_controllers
-      directory "controllers", "app/controllers"
+      copy_file "app/controllers/webpay_controller.rb"
       copy_file "config/initializers/tbk.rb"
     end
 

@@ -1,4 +1,8 @@
+require 'rails'
+require "tbk-rails/version"
+require 'tbk-rails/engine' if defined?(Rails)
+
 module TbkRails
-  require "tbk-rails/version"
-  require 'tbk-rails/engine' if defined?(Rails)
+  module Controllers
+  end
 end
