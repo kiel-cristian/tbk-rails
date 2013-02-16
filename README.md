@@ -9,8 +9,9 @@ Provides [TBK][tbk] integration with Rails.
 Installation
 ------------
 
-Add `tbk-rails` to your Gemfile:
+Add `tbk-rails` and `tbk` to your Gemfile:
 
+    gem "tbk", :git => "https://github.com/gonzalo-bulnes/tbk.git", :branch => "server-configuration-variables"
     gem 'tbk-rails', git: 'https://github.com/kiel-cristian/tbk-rails.git'
 
 Then run `bundle install` to install both the `tbk` and `tbk-rails` gems.
