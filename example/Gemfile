@@ -3,3 +3,10 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'tbk-rails', path: '../'
 gem "tbk", :git => "https://github.com/gonzalo-bulnes/tbk.git", :branch => "server-configuration-variables"
+
+group :development do
+  gem 'better_errors', :git => 'git://github.com/charliesome/better_errors.git'
+  # binding_of_caller is not required, but highly recommended by better_errors
+  gem 'binding_of_caller'
+  gem 'route66'
+end
